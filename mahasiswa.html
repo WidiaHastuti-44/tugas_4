@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIKA - profil mahasiswa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>SIKA</h1>
+            <p>sistem informasi akademik</p>
+        </div>
+    </header>
+    <nav aria-label="Navigasi utama">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="mahasiswa.html" aria-current="page">profil mahasiswa</a></li>
+                <li><a href="form-mahasiswa.html">form-mahasiswa</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="page-heading">
+            <h2>Profil Mahasiswa</h2>
+            <p>Informasi identitas dan status akademik mahasiswa.</p>
+        </section>
+        <section class="profile">
+            <figure>
+                <img src="whatsapp image 2026-04-14 at 16.43.49.jpeg" alt="Foto profil mahasiswa Widia Hastuti">
+                <figcaption>Widia Hastuti</figcaption>
+            </figure>
+            <div class="profile-info">
+                <h2>Identitas Mahasiswa</h2>
+                <p><strong>NIM:</strong>22250043</p>
+                <P><strong>Program studi:</strong>Teknik Informatika</P>
+                <p><strong>Angkatan:</strong>2025</p>
+            </div>
+        </section>
+        <section class="content-panel">
+            <h2>Pencarian Mahasiswa</h2>
+            <p>Cari mahasiswa berdasarkan NIM atau nama.</p>
+
+            <div class="form-group">
+                <label for="cariMahasiswa">Cari Mahasiswa</label>
+                <input type="search" id="cariMahasiswa" placeholder="Masukkan NIM atau nama mahasiswa">
+            </div>
+
+            <p id="pesanTidakDitemukan" aria-live="polite"></p>
+
+            <div class="table-wrapper">
+                <table id="tabelMahasiswa">
+                    <caption>Daftar Mahasiswa</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">NIM</th>
+                            <th scope="col">Nama Mahasiswa</th>
+                            <th scope="col">Program Studi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22250043</td>
+                            <td>Widia Hastuti</td>
+                            <td>Teknik Informatika</td>
+                        </tr>
+                        <tr>
+                            <td>22250044</td>
+                            <td>Andi</td>
+                            <td>Sistem Informasi</td>
+                        </tr>
+                        <tr>
+                            <td>22250045</td>
+                            <td>Siti</td>
+                            <td>Teknik Informatika</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="content-panel">
+            <h2>Informasi Akademik</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>Status Akademik Mahasiswa</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Program Studi</th>
+                            <td>Teknik Informatika</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Status</th>
+                            <td>Aktif</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SIKA</p>
+        </div>
+    </footer>
+</body>
+
+</html>
